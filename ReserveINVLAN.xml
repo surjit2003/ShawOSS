@@ -1,0 +1,10 @@
+<com:queryRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nccom="http://netcracker.com/xsd/applications/ossj/Common/v1-5" xmlns:com="http://ossj.org/xml/Common/v1-5">
+<com:namedQuery xsi:type="nccom:DynamicNamedQuery">
+<nccom:queryIdentifier>getNextAvailableVLANFromPool</nccom:queryIdentifier>
+<nccom:queryParameters>
+<ethernetNetworkName>EOD Network</ethernetNetworkName>
+<poolName>24-24</poolName>
+<accountNumber>131-1111-1111</accountNumber>
+</nccom:queryParameters>
+</com:namedQuery>
+</com:queryRequest>

@@ -1,0 +1,15 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <com:queryRequest xmlns:com="http://ossj.org/xml/Common/v1-5" xmlns:nccom="http://netcracker.com/xsd/applications/ossj/Common/v1-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <com:namedQuery xsi:type="nccom:DynamicNamedQuery">
+            <nccom:queryIdentifier>Param1</nccom:queryIdentifier>
+            <nccom:queryParameters>
+               <macAddress>Param2</macAddress>
+            </nccom:queryParameters>
+         </com:namedQuery>
+      </com:queryRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+

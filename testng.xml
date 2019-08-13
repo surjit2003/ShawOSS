@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestDataSuite" verbose="1">
+	<!-- <suite name="Golden Suite" thread-count="2" parallel="methods"> -->
+	<listeners>
+		<listener class-name="com.netcracker.shaw.report.TestListener" />
+		<listener class-name="com.netcracker.shaw.report.CustomEmailableTestNGReport" />
+	</listeners>
+	<test name="Regression_Test">
+	
+		<classes>
+			<class name="com.netcracker.shaw.phase1.CiscoIPBB" />
+			<class name="com.netcracker.shaw.phase1.Alcatel" />
+			<class name="com.netcracker.shaw.phase1.CMTS" />
+			<class name="com.netcracker.shaw.phase1.CMTSOnDemand" />
+			<class name="com.netcracker.shaw.phase1.ETX" />
+			<class name="com.netcracker.shaw.phase1.Spectrum" />
+			<class name="com.netcracker.shaw.phase1.FDB" />
+			<class name="com.netcracker.shaw.phase1.IPV4" />
+			<class name="com.netcracker.shaw.phase1.CIN" />
+			<class name="com.netcracker.shaw.phase1.SecondRuns" />
+			<class name="com.netcracker.shaw.phase1.VLANFlow" />
+			<class name="com.netcracker.shaw.phase2.CINonDemand_Dataflow_Functionality" />
+			<class name="com.netcracker.shaw.phase2.Customizing_Validation_Report_Functionality" />
+			<class name="com.netcracker.shaw.phase2.Decoupling_DnR_Requirement" />
+			<class name="com.netcracker.shaw.phase2.IPV4_Reports_Functionality" />
+			<class name="com.netcracker.shaw.phase2.RPD_Provisioning_Flow_API" />
+			<class name="com.netcracker.shaw.phase2.Validate_RI_Functionality" />
+			<class name="com.netcracker.shaw.phase2.Validation_Grants" />
+		</classes>
+	</test>
+</suite>
+

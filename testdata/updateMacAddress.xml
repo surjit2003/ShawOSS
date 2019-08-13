@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:inv="http://ossj.org/xml/Inventory/v1-2" xmlns:cbecore="http://ossj.org/xml/Common-CBECore/v1-5" xmlns:com="http://ossj.org/xml/Common/v1-5" xmlns:res="http://ossj.org/xml/Common-CBEResource/v1-5">
+   <soapenv:Header></soapenv:Header>
+   <soapenv:Body>
+      <inv:setEntitiesByValuesRequest>
+         <inv:entityValues xsi:type="cbecore:ArrayOfEntityValue">
+            <cbecore:item xsi:type="res:ResourceValue">
+               <com:key xsi:type="res:ResourceKey">
+                  <com:type>Param1</com:type>
+                  <com:primaryKey>Param2</com:primaryKey>
+               </com:key>
+               <cbecore:describedBy>
+                  <cbecore:item>
+                     <cbecore:value>Param3</cbecore:value>
+                     <cbecore:characteristic>Param4</cbecore:characteristic>
+                  </cbecore:item>
+               </cbecore:describedBy>
+            </cbecore:item>
+         </inv:entityValues>
+      </inv:setEntitiesByValuesRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
